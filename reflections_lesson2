@@ -1,0 +1,27 @@
+Git Commands:
+
+git init => To create a repository
+git status => tell the status of the repository such as the most recent commit.
+
+====================================================================================================
+
+What happens when you initialize a repository? Why do you need to do it?
+
+When git init is used to initialize a repository a .git file is created indicating that it is a part of a repository now. to view that file (ls -a).
+
+When a new repository is created git does not automatically save a commit and it needs to be done manually for the following reasons:
+
+You might not want to commit all of the files.
+You might want to give comments to your commits.
+
+====================================================================================================
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+Staging area is an intermediate between our working directory and git repository. The flow is something like:
+
+Working directory => Staging Area => Repository
+
+The main use of staging are is that we can add the files we want to commit and do them in a single commit.
+
+====================================================================================================
