@@ -6,9 +6,16 @@ git push => pushes repositories into the remote account.
 
 
 ===========================================================================================================
+
 When would you want to use a remote repository rather than keeping all your work local?
 
 When multiple people are working on the same project. It would act as central repository.
 To keep it on cloud and make your work machine independant.
 To help ensure a backup.
 
+===========================================================================================================
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+That would keep the centralized repository up-to-date.
+This helps when multiple people are working on the same project and each has the latest versions of the centralized repository.
