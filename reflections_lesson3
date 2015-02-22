@@ -3,3 +3,12 @@ Git Commands
 git config --global credential.helper wincred
 git remote => connects to the remote account i.e. github
 git push => pushes repositories into the remote account.
+
+
+===========================================================================================================
+When would you want to use a remote repository rather than keeping all your work local?
+
+When multiple people are working on the same project. It would act as central repository.
+To keep it on cloud and make your work machine independant.
+To help ensure a backup.
+
