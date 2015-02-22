@@ -1,0 +1,5 @@
+Git Commands
+
+git config --global credential.helper wincred
+git remote => connects to the remote account i.e. github
+git push => pushes repositories into the remote account.

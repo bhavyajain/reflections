@@ -2,6 +2,14 @@ Git Commands:
 
 git init => To create a repository
 git status => tell the status of the repository such as the most recent commit.
+git diff => tells the difference between working and staged directory
+git diff --staged => tells the difference between the most recent commit and the stage
+git branch <name>=> tells you the branch you are currently attached to.if name is added that branch gets created.
+git merge <name of the branch to be merged> (<the active branch in which the merge is to be done>)
+git checkout <master> ; git merge <secondary>
+git log --graph --oneline - all commits summary
+
+
 
 ====================================================================================================
 
@@ -23,5 +31,76 @@ Staging area is an intermediate between our working directory and git repository
 Working directory => Staging Area => Repository
 
 The main use of staging are is that we can add the files we want to commit and do them in a single commit.
+
+====================================================================================================
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+staging area is the intermediate stage between the working directory and the repository.
+Before making a commit the file/files that have been changed shall be added to the staging area and then the repository. File/files in the staging area collectively form a commit.
+
+====================================================================================================
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A linear commit is useful when you want to update documents, new feature or bug fixes.
+
+However when you need to create an experimental version , or a different language version, or a different version of a game say an easier version, branching helps.
+
+master branch can also be assumed as production branch where everything works.
+
+and the other branch could be a development branch.
+
+====================================================================================================
+
+
+How do the diagrams help you visualize the branch structure?
+
+Diagrams help us better visualize the commit history and where the branching seperated. additionally it helps us to understand reachability.
+
+Reachability is the git log tracing back from the most recent to the first commit. 
+
+The key point in this is that only the parent commit can be reached.
+
+
+
+1 <= 2 <= 3 <= 4 (master branch)
+        ||
+            <=3.1
+
+Reachability is depicted by the backward arrows where the arrow points to the parent commit.
+In this example 3.1 is not reachable by the master branch.
+
+====================================================================================================
+
+Git commit merge conflict
+
+It happens when two branches have changed the same part of the same file, and then those branches are merged together
+1. use git status to see the conflict file that have problem.
+2. view using editor your conflict file. ex: subl game.js
+3. A conflict-marked area begins with <<<<<<< and ends with >>>>>>>. These are also known as the conflict markers. The two conflicting blocks themselves are divided by a =======.
+4. edit code that you want
+5. git add 
+6. git commit
+
+====================================================================================================
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merge combines two branches together into one and this way the respective features are combined into one linear commit. The commits for the merged branch are sorted based on their time.
+
+The diagram helps us to understand the parent and reachability concept.
+
+====================================================================================================
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Pros:
+
+Conflict resolution in an easy way
+history of all the commits for both the branches
+
+Cons:
+None
 
 ====================================================================================================

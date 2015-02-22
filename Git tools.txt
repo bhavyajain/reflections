@@ -1,0 +1,4 @@
+Handy tools learned in Git lesson
+
+sublime ==> greatly encouraged and talked about throught out.
+https://www.gliffy.com/ and http://yuml.me/diagram/activity/draw ==> to create diagrams

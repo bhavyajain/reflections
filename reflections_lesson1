@@ -1,7 +1,7 @@
 Git Commands:
 
 git log => shows the log for git
-git checkout => used to revert to a previous version
+git checkout => used to revert to a previous version; switch between branches
 git diff id1 id2 => tells the difference between two commit id's
 git clone => to copy a repository
 
